@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divakar Natarajan — Hybrid Cloud Infrastructure Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">DN<span class="dot">.</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid-lines"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="status-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="name-line" data-text="DIVAKAR">DIVAKAR</span>
+        <span class="name-line accent" data-text="NATARAJAN">NATARAJAN</span>
+      </h1>
+      <p class="hero-title">
+        <span class="typed-text" id="typedText"></span><span class="caret">|</span>
+      </p>
+      <p class="hero-sub">
+        3 years crafting resilient hybrid cloud infrastructure — where on-prem meets Azure at scale.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="700">0</span><span>+</span>
+          <p>Servers Managed</p>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span><span>+</span>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span><span></span>
+          <p>Certifications</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-wrap">
+        <div class="avatar-placeholder">
+          <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="45" r="22" fill="var(--accent)" opacity="0.15" stroke="var(--accent)" stroke-width="1.5"/>
+            <circle cx="60" cy="45" r="14" fill="var(--accent)" opacity="0.3"/>
+            <path d="M20 100 Q30 72 60 72 Q90 72 100 100" fill="var(--accent)" opacity="0.15" stroke="var(--accent)" stroke-width="1.5"/>
+          </svg>
+          <span class="avatar-label">Photo Coming Soon</span>
+        </div>
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="avatar-ring ring-3"></div>
+        <!-- Floating tech badges -->
+        <div class="float-badge b1">
+          <img src="https://img.icons8.com/color/48/microsoft-azure.png" alt="Azure" />
+          <span>Azure</span>
+        </div>
+        <div class="float-badge b2">
+          <img src="https://img.icons8.com/color/48/vmware.png" alt="VMware" />
+          <span>VMware</span>
+        </div>
+        <div class="float-badge b3">
+          <img src="https://img.icons8.com/color/48/windows-10.png" alt="Windows" />
+          <span>Windows</span>
+        </div>
+        <div class="float-badge b4">
+          <img src="https://img.icons8.com/color/48/active-directory.png" alt="AD" />
+          <span>AD</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Engineered for <span class="accent">Resilience</span></h2>
+          <p>I'm a Hybrid Cloud Infrastructure Engineer at <strong>Wipro Limited</strong>, where I architect and maintain enterprise-grade Windows Server environments fused with Azure cloud workloads — keeping 700+ servers healthy and production incidents minimal.</p>
+          <p>My work spans the full stack of infrastructure: from bare-metal Windows Server administration and VMware vSphere virtualisation, to Azure IaaS provisioning, disaster recovery pipelines, and hybrid identity through Azure AD Connect.</p>
+          <p>I thrive in Sev1 bridge calls, RCA deep-dives, and designing systems that simply <em>don't go down</em>.</p>
+          <div class="about-tags">
+            <span class="tag">Wipro Limited</span>
+            <span class="tag">Feb 2023 – Present</span>
+            <span class="tag">Coimbatore, India</span>
+            <span class="tag">ITIL Practitioner</span>
+          </div>
+        </div>
+        <div class="about-card-wrap">
+          <div class="about-card">
+            <div class="card-row">
+              <div class="card-icon">🖥️</div>
+              <div>
+                <h4>Windows Infrastructure</h4>
+                <p>AD, GPO, SCCM, DNS/DHCP at enterprise scale</p>
+              </div>
+            </div>
+            <div class="card-row">
+              <div class="card-icon">☁️</div>
+              <div>
+                <h4>Azure IaaS</h4>
+                <p>VM lifecycle, RBAC, Storage, Azure Monitor</p>
+              </div>
+            </div>
+            <div class="card-row">
+              <div class="card-icon">🔁</div>
+              <div>
+                <h4>DR & Migration</h4>
+                <p>Recovery Services Vault, Azure Migrate, lift-and-shift</p>
+              </div>
+            </div>
+            <div class="card-row">
+              <div class="card-icon">⚡</div>
+              <div>
+                <h4>Incident Management</h4>
+                <p>P1/P2 response, RCA, OpsRamp, ServiceNow</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">Technical <span class="accent">Arsenal</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">☁️</span>
+            <h3>Cloud — Azure</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/microsoft-azure.png" alt="Azure" />
+              <span>Azure Virtual Machines</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/microsoft-azure.png" alt="RBAC" />
+              <span>RBAC & IAM</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/microsoft-azure.png" alt="Monitor" />
+              <span>Azure Monitor</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/microsoft-azure.png" alt="Storage" />
+              <span>Storage Accounts (Blob/File)</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="82"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🖥️</span>
+            <h3>Windows Server</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/windows-10.png" alt="AD" />
+              <span>Active Directory & GPO</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/windows-10.png" alt="SCCM" />
+              <span>SCCM / Patch Management</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/windows-10.png" alt="DNS" />
+              <span>DNS / DHCP</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/windows-10.png" alt="WS" />
+              <span>Windows Server 2012–2022</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="92"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🔷</span>
+            <h3>VMware Virtualisation</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/vmware.png" alt="vSphere" />
+              <span>VMware vSphere</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/vmware.png" alt="ESXi" />
+              <span>ESXi Host Management</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="83"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/vmware.png" alt="vCenter" />
+              <span>vCenter Server (vCSA)</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/vmware.png" alt="Snapshot" />
+              <span>Snapshots & Cloning</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="87"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🔐</span>
+            <h3>Hybrid Identity & DR</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/azure-active-directory.png" alt="EntraID" />
+              <span>Azure AD (Entra ID)</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/azure-active-directory.png" alt="AD Connect" />
+              <span>Azure AD Connect</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/microsoft-azure.png" alt="Backup" />
+              <span>Azure Backup / RSV</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/microsoft-azure.png" alt="Migrate" />
+              <span>Azure Migrate</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🌐</span>
+            <h3>Networking</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/network.png" alt="VNet" />
+              <span>Azure VNets & NSG</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/network.png" alt="RDP" />
+              <span>RDP Troubleshooting</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🛠️</span>
+            <h3>Tools & ITSM</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/servicenow.png" alt="ServiceNow" />
+              <span>ServiceNow</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/network-monitor.png" alt="OpsRamp" />
+              <span>OpsRamp</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <img src="https://img.icons8.com/color/32/citrix.png" alt="Citrix" />
+              <span>Citrix Workspace</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-label">03 / Experience</div>
+      <h2 class="section-title">Work <span class="accent">History</span></h2>
+      <div class="timeline">
+        <div class="timeline-item active">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Hybrid Cloud Infrastructure Engineer</h3>
+                <p class="company">Wipro Limited</p>
+              </div>
+              <span class="timeline-date">Feb 2023 – Present</span>
+            </div>
+            <div class="timeline-body">
+              <div class="exp-group">
+                <h4>☁️ Azure Cloud & Storage Operations</h4>
+                <ul>
+                  <li>Managed Azure VMs (IaaS) — provisioning, resizing, disk management, performance monitoring across production workloads.</li>
+                  <li>Administered Azure Storage (Blob & File Shares) with RBAC-controlled access policies.</li>
+                  <li>Troubleshot RDP connectivity, VM availability issues, and performance degradation in Azure environments.</li>
+                </ul>
+              </div>
+              <div class="exp-group">
+                <h4>🔁 Disaster Recovery & Migration</h4>
+                <ul>
+                  <li>Executed backup operations via Azure Recovery Services Vault and validated restore processes for critical workloads.</li>
+                  <li>Monitored backup jobs, analyzed failures, and ensured successful recovery during incidents.</li>
+                  <li>Deployed Azure Migrate appliance on-prem to assess workloads and support lift-and-shift migration scenarios.</li>
+                </ul>
+              </div>
+              <div class="exp-group">
+                <h4>🔷 VMware Virtualisation</h4>
+                <ul>
+                  <li>Managed end-to-end VM lifecycle in VMware (ESXi + vCenter): provisioning, cloning, snapshots, decommissioning.</li>
+                  <li>Performed snapshot consolidation and resolved storage performance issues on VMware hosts.</li>
+                </ul>
+              </div>
+              <div class="exp-group">
+                <h4>🔐 Hybrid Identity & Incident Management</h4>
+                <ul>
+                  <li>Supported hybrid identity environments integrated with Azure AD Connect, handling sync issues.</li>
+                  <li>Managed RBAC permissions and validated access control for Azure resources.</li>
+                  <li>Monitored infra with Azure Monitor and OpsRamp — responded to alerts, resolved P1/P2 incidents.</li>
+                  <li>Participated in Sev1 bridge calls, structured troubleshooting, and root cause analysis (RCA).</li>
+                </ul>
+              </div>
+              <div class="exp-group">
+                <h4>🖥️ Core Windows Administration</h4>
+                <ul>
+                  <li>Administered 700+ Windows Servers including Active Directory, GPO, and SCCM patch management.</li>
+                  <li>Handled production incidents: service failures, CPU/memory spikes, disk issues, access problems.</li>
+                  <li>Configured and troubleshot DNS and DHCP for reliable network connectivity.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-tags">
+              <span>Azure</span><span>VMware</span><span>Windows Server</span><span>SCCM</span>
+              <span>OpsRamp</span><span>ServiceNow</span><span>RBAC</span><span>ITIL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-label">04 / Projects</div>
+      <h2 class="section-title">Infrastructure <span class="accent">Scenarios</span></h2>
+      <p class="section-desc">Real-world infrastructure challenges I've tackled and architected solutions for.</p>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🔁</div>
+            <div class="project-tags"><span>Azure Backup</span><span>RSV</span><span>DR</span></div>
+          </div>
+          <h3>Enterprise Backup & DR Pipeline</h3>
+          <p>Designed and operated a full disaster recovery pipeline for 700+ Windows Servers using Azure Recovery Services Vault. Implemented automated backup jobs, defined RPO/RTO targets, and validated restore processes to ensure business continuity during critical incidents.</p>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">99.9%</span><span>Backup Success Rate</span></div>
+            <div class="metric"><span class="metric-val">&lt;4h</span><span>RTO Target</span></div>
+            <div class="metric"><span class="metric-val">700+</span><span>Servers Protected</span></div>
+          </div>
+          <div class="project-tech">
+            <span>Recovery Services Vault</span>
+            <span>Azure Backup</span>
+            <span>OpsRamp Monitoring</span>
+            <span>PowerShell Automation</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🚀</div>
+            <div class="project-tags"><span>Azure Migrate</span><span>Lift & Shift</span></div>
+          </div>
+          <h3>Workload Migration Assessment</h3>
+          <p>Deployed Azure Migrate appliance in on-premises environments to discover and assess workloads for cloud migration. Led dependency analysis, workload sizing, and validation for lift-and-shift scenarios — reducing migration risk and improving planning accuracy.</p>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">100%</span><span>Assessment Coverage</span></div>
+            <div class="metric"><span class="metric-val">Lift &amp;</span><span>Shift Validated</span></div>
+          </div>
+          <div class="project-tech">
+            <span>Azure Migrate</span>
+            <span>Azure Site Recovery</span>
+            <span>Dependency Mapping</span>
+            <span>Workload Assessment</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🔐</div>
+            <div class="project-tags"><span>Hybrid Identity</span><span>Azure AD</span></div>
+          </div>
+          <h3>Hybrid Identity Infrastructure</h3>
+          <p>Maintained and troubleshot a hybrid identity environment integrating on-premises Active Directory with Azure AD via AD Connect. Resolved sync conflicts, managed RBAC assignments, and validated access control policies across hybrid workloads.</p>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">Zero</span><span>Identity Outages</span></div>
+            <div class="metric"><span class="metric-val">RBAC</span><span>Fully Enforced</span></div>
+          </div>
+          <div class="project-tech">
+            <span>Azure AD Connect</span>
+            <span>Entra ID</span>
+            <span>Active Directory</span>
+            <span>RBAC</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🔷</div>
+            <div class="project-tags"><span>VMware</span><span>vSphere</span></div>
+          </div>
+          <h3>VMware Environment Optimisation</h3>
+          <p>Managed complete VM lifecycle on VMware vSphere across ESXi hosts and vCenter — provisioning, cloning, snapshot management, and decommissioning. Resolved snapshot sprawl and storage performance bottlenecks that were impacting host performance across the production cluster.</p>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">40%</span><span>Storage Freed</span></div>
+            <div class="metric"><span class="metric-val">↑</span><span>Host Performance</span></div>
+          </div>
+          <div class="project-tech">
+            <span>VMware vSphere</span>
+            <span>ESXi</span>
+            <span>vCenter (vCSA)</span>
+            <span>Snapshot Consolidation</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">⚡</div>
+            <div class="project-tags"><span>P1/P2</span><span>ITIL</span><span>RCA</span></div>
+          </div>
+          <h3>P1 Incident Management Framework</h3>
+          <p>Established a structured incident response approach for P1/P2 production issues — spanning CPU/memory spikes, disk failures, service outages, and RDP connectivity loss. Participated actively in Sev1 bridge calls and produced RCAs to prevent recurrence.</p>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">MTTR</span><span>Minimised</span></div>
+            <div class="metric"><span class="metric-val">2x</span><span>Habit Flagbearer Award</span></div>
+          </div>
+          <div class="project-tech">
+            <span>ServiceNow</span>
+            <span>OpsRamp</span>
+            <span>Azure Monitor</span>
+            <span>ITIL v4</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🤖</div>
+            <div class="project-tags"><span>AI + ITSM</span><span>Automation</span></div>
+          </div>
+          <h3>AI-Driven ServiceNow Ticket Validation</h3>
+          <p>Participated in Wipro's AI-driven ticket validation initiative within ServiceNow, using AI assistance to categorise, validate, and route incidents faster. Recognised with the "Habit Flagbearer" award for proactive participation and ensuring timely ticket resolution.</p>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-val">↑</span><span>Ticket Resolution Speed</span></div>
+            <div class="metric"><span class="metric-val">🏆</span><span>Habit Flagbearer</span></div>
+          </div>
+          <div class="project-tech">
+            <span>ServiceNow</span>
+            <span>AI Automation</span>
+            <span>ITSM</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-label">05 / Certifications</div>
+      <h2 class="section-title">Certified <span class="accent">Expertise</span></h2>
+      <div class="certs-grid">
+
+        <div class="cert-card featured">
+          <div class="cert-ribbon">Featured</div>
+          <div class="cert-logo">
+            <img src="https://img.icons8.com/color/80/microsoft-azure.png" alt="Azure" />
+          </div>
+          <div class="cert-body">
+            <h3>Azure Administrator Associate</h3>
+            <p class="cert-issuer">Microsoft Certified</p>
+            <p class="cert-code">AZ-104</p>
+            <p class="cert-desc">Covers Azure compute, storage, networking, identity, and governance. Validates hands-on Azure administration skills.</p>
+          </div>
+          <div class="cert-badge">Active</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-logo">
+            <img src="https://img.icons8.com/color/80/windows-10.png" alt="Windows" />
+          </div>
+          <div class="cert-body">
+            <h3>Windows Server Hybrid Core Infrastructure</h3>
+            <p class="cert-issuer">Microsoft Exam Passed</p>
+            <p class="cert-code">AZ-800</p>
+            <p class="cert-desc">Validates skills in Windows Server hybrid infrastructure — on-premises and Azure integration.</p>
+          </div>
+          <div class="cert-badge">Passed</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-logo">
+            <img src="https://img.icons8.com/color/80/amazon-web-services.png" alt="AWS" />
+          </div>
+          <div class="cert-body">
+            <h3>AWS Certified Cloud Practitioner</h3>
+            <p class="cert-issuer">Amazon Web Services</p>
+            <p class="cert-code">CLF-C02</p>
+            <p class="cert-desc">Foundation-level certification validating knowledge of AWS services, cloud concepts, and security.</p>
+          </div>
+          <div class="cert-badge">Active</div>
+        </div>
+
+        <div class="cert-card internal">
+          <div class="cert-logo">
+            <img src="https://img.icons8.com/color/80/windows-10.png" alt="Wipro" />
+          </div>
+          <div class="cert-body">
+            <h3>Windows Server L2</h3>
+            <p class="cert-issuer">Wipro Internal Certification</p>
+            <p class="cert-code">Internal</p>
+            <p class="cert-desc">Advanced Windows Server administration — L2 support certification by Wipro.</p>
+          </div>
+          <div class="cert-badge internal-badge">Internal</div>
+        </div>
+
+        <div class="cert-card internal">
+          <div class="cert-logo">
+            <img src="https://img.icons8.com/color/80/vmware.png" alt="VMware" />
+          </div>
+          <div class="cert-body">
+            <h3>VMware vSphere L2</h3>
+            <p class="cert-issuer">Wipro Internal Certification</p>
+            <p class="cert-code">Internal</p>
+            <p class="cert-desc">Advanced VMware vSphere administration — L2 support certification by Wipro.</p>
+          </div>
+          <div class="cert-badge internal-badge">Internal</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section section-dark achievements-section">
+    <div class="container">
+      <div class="achievements-banner">
+        <div class="ach-icon">🏆</div>
+        <div class="ach-text">
+          <h3>Habit Flagbearer — Awarded Twice at Wipro</h3>
+          <p>Recognised under "Being Responsive" and "Building Trust" categories for proactive incident handling, participation in AI-driven ServiceNow ticket validation, and ensuring timely resolution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-label">06 / Contact</div>
+      <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+      <p class="section-desc">Open to new opportunities, collaborations, and cloud infrastructure conversations.</p>
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="mailto:divakarcloud5@gmail.com" class="contact-card">
+            <div class="contact-icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <p>divakarcloud5@gmail.com</p>
+            </div>
+            <span class="arrow">→</span>
+          </a>
+          <a href="tel:+918667537023" class="contact-card">
+            <div class="contact-icon">📱</div>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 8667537023</p>
+            </div>
+            <span class="arrow">→</span>
+          </a>
+          <a href="https://www.linkedin.com/in/divakar-natarajan" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>Connect with me</p>
+            </div>
+            <span class="arrow">→</span>
+          </a>
+          <a href="https://github.com/divakar-natarajan" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div>
+              <h4>GitHub</h4>
+              <p>View my repositories</p>
+            </div>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea rows="5" placeholder="What's on your mind?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo">DN<span class="dot">.</span></p>
+        <p class="footer-copy">© 2025 Divakar Natarajan · Built for GitHub Pages</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/divakar-natarajan" target="_blank">LinkedIn</a>
+          <a href="https://github.com/divakar-natarajan" target="_blank">GitHub</a>
+          <a href="mailto:divakarcloud5@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
