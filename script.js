@@ -175,19 +175,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const form = document.getElementById('contactForm');
 form?.addEventListener('submit', e => {
   e.preventDefault();
+  const formData = new FormData(form);
+  const name = String(formData.get('name') || '').trim();
+  const email = String(formData.get('email') || '').trim();
+  const message = String(formData.get('message') || '').trim();
+
+  const subject = encodeURIComponent(`Portfolio enquiry from ${name || 'Website Visitor'}`);
+  const body = encodeURIComponent(
+    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+  );
+  const mailtoLink = `mailto:divakarcloud5@gmail.com?subject=${subject}&body=${body}`;
+
   const btn = form.querySelector('button[type="submit"]');
   const original = btn.textContent;
-  btn.textContent = '✓ Message Sent!';
+  btn.textContent = 'Opening Email App...';
   btn.style.background = 'var(--accent-2)';
   btn.style.color = 'var(--bg)';
   btn.style.borderColor = 'var(--accent-2)';
+
+  window.location.href = mailtoLink;
+
   form.reset();
   setTimeout(() => {
     btn.textContent = original;
     btn.style.background = '';
     btn.style.color = '';
     btn.style.borderColor = '';
-  }, 3000);
+  }, 1800);
 });
 
 // ── HERO GRID PARALLAX ──
