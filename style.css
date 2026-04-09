@@ -311,6 +311,8 @@ img { max-width: 100%; display: block; }
 .contact-card:hover .arrow { color: var(--accent); transform: translateX(4px); }
 
 .contact-form { padding: 16px; display:grid; gap: 12px; }
+.form-note { font-size: .74rem; color: var(--text-dim); line-height: 1.5; }
+.form-note strong { color: var(--text-muted); }
 .form-group { display:grid; gap: 5px; }
 .form-group input, .form-group textarea {
   background: rgba(8, 16, 29, .8);
@@ -322,8 +324,6 @@ img { max-width: 100%; display: block; }
 }
 .form-group input:focus, .form-group textarea:focus { outline:none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(76,201,255,.15); }
 .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-dim); }
-.form-note { font-size: .74rem; color: var(--text-dim); line-height: 1.5; }
-.form-note strong { color: var(--text-muted); }
 
 .footer { padding: 24px 0 32px; border-top: 1px solid rgba(126,145,179,.2); margin-top: 18px; }
 .footer-inner { display:flex; justify-content:space-between; align-items:center; gap: 14px; flex-wrap: wrap; }
